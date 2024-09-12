@@ -2,6 +2,9 @@ FROM python:3.11.5-slim AS builder
 
 RUN pip install importlib-metadata
 
+
+RUN pip install importlib-metadata
+
 ADD . /app
 WORKDIR /app
 
