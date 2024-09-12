@@ -1,4 +1,7 @@
-FROM python:3-slim AS builder
+FROM python:3.11.5-slim AS builder
+
+RUN pip install importlib-metadata
+
 ADD . /app
 WORKDIR /app
 
