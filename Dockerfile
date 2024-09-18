@@ -1,4 +1,4 @@
-FROM python:3.12.5-slim AS builder
+FROM python:3.11.5-slim-bullseye AS builder
 
 RUN pip install importlib-metadata
 
