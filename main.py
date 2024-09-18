@@ -1,6 +1,6 @@
 import os
 import subprocess
-import importlib.metadata
+# import importlib.metadata
 import requests
 import time
 
