@@ -1,7 +1,4 @@
-FROM python:3.11.5-slim AS builder
-
-RUN pip install importlib-metadata
-
+FROM python:3.12.5-slim AS builder
 
 RUN pip install importlib-metadata
 
