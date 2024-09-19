@@ -1,12 +1,10 @@
-FROM python:3.12.5-slim AS builder
-
-RUN pip install importlib-metadata
+FROM python:3.11.5-slim AS builder
 
 ADD . /app
 WORKDIR /app
 
 # We are installing a dependency here directly into our app source dir
-RUN pip install --target=/app requests
+RUN pip install --target=/app requests==2.32.3 urllib3==2.2.2 importlib-metadata==4.13.0
 
 # A distroless container image with Python and some basics like SSL certificates
 # https://github.com/GoogleContainerTools/distroless
